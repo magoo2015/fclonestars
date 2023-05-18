@@ -7,4 +7,4 @@ class Fcplayers(models.Model):
     firstname = models.CharField(max_length=255)
     lastname = models.CharField(max_length=255)
     age = models.IntegerField()
-    parent = models.ForeignKey(User, on_delete=models.CASCADE)
+    parent = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
