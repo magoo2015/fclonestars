@@ -19,7 +19,7 @@ def players_list(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         
 
-@api_view(['GET', 'PUT'])
+@api_view(['GET', 'PUT', 'DELETE'])
 def player_detail(request, pk):
         player = get_object_or_404(Fcplayers, pk=pk)
         if request.method == 'GET':
@@ -30,6 +30,10 @@ def player_detail(request, pk):
               serializer.is_valid(raise_exception=True)
               serializer.save()
               return Response(serializer.data)
+        elif request.method == 'DELETE':
+              player.delete()
+              return Response(status=status.HTTP_204_NO_CONTENT)
+        
 
 
 
