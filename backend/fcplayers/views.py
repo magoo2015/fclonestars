@@ -17,7 +17,18 @@ def players_list(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         
-        
+
+@api_view(['GET'])
+def player_detail(request, pk):
+    try:
+        player = Fcplayers.objects.get(pk=pk)
+        serializer = FcplayersSerializer(player)
+        return Response(serializer.data)
+    
+    except Fcplayers.DoesNotExist:
+         return Response(status=status.HTTP_404_NOT_FOUND)
+    
+            
     
 
     
