@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 
 import axios from "axios";
+import logo from "../../images/fclonestar_logo.jpg";
+import bg from "../../images/hmmm.jpg";
 
 const HomePage = () => {
   // The "user" value from this Hook contains the decoded logged in user information (username, first name, id)
@@ -28,6 +30,8 @@ const HomePage = () => {
   }, [token]);
   return (
     <div className="container">
+      <img src={logo} alt="logo" />
+
       <h1>Home Page for {user.username}!</h1>
       {cars &&
         cars.map((car) => (

@@ -1,9 +1,9 @@
-# from django.db import models
+from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    pass
+    #pass
     '''
     This is a custom version of the built in User class
     It contains all of the built in fields and functionality of the standard User
@@ -14,3 +14,7 @@ class User(AbstractUser):
     # Example (note import of models above that is commented out)
     # this will add a column to the user table
     # is_student = models.BooleanField('student status', default=False)
+    first_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255)
+    email = models.EmailField(max_length=255)
+    username = models.CharField(max_length=255, unique=True)
