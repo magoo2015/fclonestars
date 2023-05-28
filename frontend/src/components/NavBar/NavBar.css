@@ -13,7 +13,11 @@ li {
   box-shadow: 4px 2px 5px gray;
   color: white;
   margin-bottom: 2rem;
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.navBar img {
+  height: 10px;
 }
 
 .navBar button {
@@ -32,4 +36,8 @@ li {
 .brand {
   cursor: pointer;
   font-size: 2rem;
+}
+
+.brand p {
+  color:black;
 }

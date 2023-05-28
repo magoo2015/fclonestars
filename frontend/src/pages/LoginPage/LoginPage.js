@@ -2,7 +2,9 @@ import React, { useContext, useEffect } from "react";
 import AuthContext from "../../context/AuthContext";
 import useCustomForm from "../../hooks/useCustomForm";
 import { Link } from "react-router-dom";
+import logo from "../../images/fclonestar_logo.jpg";
 import "./LoginPage.css";
+
 
 const LoginPage = () => {
   const { loginUser, isServerError } = useContext(AuthContext);
@@ -44,6 +46,7 @@ const LoginPage = () => {
         ) : null}
         <Link to="/register">Click to register!</Link>
         <button>Login!</button>
+        <img src={logo} alt="log"></img>
       </form>
     </div>
   );
