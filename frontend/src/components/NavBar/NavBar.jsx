@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link
             to="/"
             style={{ textDecoration: "none", color: "white" }}
-          ><p>FCLONESTARS</p></Link>
+          ><p>Wakanda Panthers</p></Link>
         </li>
 
 
