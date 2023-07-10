@@ -46,8 +46,9 @@ const LoginPage = () => {
         ) : null}
         <Link to="/register">Click to register!</Link>
         <button>Login!</button>
-        <img src={logo} alt="log"></img>
+        
       </form>
+      <img src={logo} alt="log"></img>
     </div>
   );
 };

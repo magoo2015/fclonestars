@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
 import "./NavBar.css";
-// import logo from "../../images/fclonestar_logo.jpg";
+import logo from "../../images/fclonestar_logo.jpg";
 
 const Navbar = () => {
   const { logoutUser, user } = useContext(AuthContext);
@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link
             to="/"
             style={{ textDecoration: "none", color: "white" }}
-          ><p>Wakanda Panthers</p></Link>
+          ><p>FCLonestar</p></Link>
         </li>
 
 
