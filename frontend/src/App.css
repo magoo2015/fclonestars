@@ -11,12 +11,15 @@
 html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
-  background-image: url("./images/background.jpg");
+  /* background-image: url("./images/background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   
 }
 
